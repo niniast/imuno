@@ -1,0 +1,144 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Imuno</title>
+    </head>
+    <body>
+        <div class="layout">
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <h2 class="logo">imuno</h2>
+
+                <nav>
+                    <label class="nav-item">
+                        <input type="checkbox" />
+                        <span>მთავარი</span>
+                    </label>
+
+                    <label class="nav-item active">
+                        <input type="checkbox" checked />
+                        <span>ჩემი ფორმები</span>
+                    </label>
+
+                    <label class="nav-item">
+                        <input type="checkbox" />
+                        <span>პაციენტები</span>
+                    </label>
+                    <label class="nav-item">
+                        <input type="checkbox" />
+                        <span>ორგანიზაციები</span>
+                    </label>
+
+                    <label class="nav-item">
+                        <input type="checkbox" />
+                        <span>კვლევები</span>
+                    </label>
+
+                    <label class="nav-item">
+                        <input type="checkbox" />
+                        <span>მასალები</span>
+                    </label>
+                    <label class="nav-item">
+                        <input type="checkbox" />
+                        <span>მასალის მიღება</span>
+                    </label>
+
+                    <label class="nav-item">
+                        <input type="checkbox" />
+                        <span>ანგარიშგება</span>
+                    </label>
+                    <label class="nav-item">
+                        <input type="checkbox" />
+                        <span>ხარისხის კონტროლი</span>
+                    </label>
+                    <label class="nav-item">
+                        <input type="checkbox" />
+                        <span>პარამეტრები</span>
+                    </label>
+                </nav>
+            </aside>
+
+            <!-- MAIN -->
+            <main class="main">
+                <!-- HEADER -->
+                <div class="topbar">
+                    <div class="left">
+                        <button class="burger" id="burger">☰</button>
+                        <h1>მასალის რეგისტრაცია</h1>
+                    </div>
+                    <div class="actions">
+                        <button class="btn">შენახვა</button>
+                        <button class="btn">ახალი</button>
+                        <button class="btn primary">გაგზავნა</button>
+                    </div>
+                </div>
+
+                <!-- INFO BAR -->
+                <div class="info-bar">
+                    <div class="info">
+                        <div class="info-item">
+                            <span class="label">ფორმის ნომერი</span>
+                            <strong>REQ-2025-05-20-000123</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="label">სტატუსი</span>
+                            <span class="badge">შესავსები</span>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="label"> შექმნის დრო</span>
+                            <span>20/05/2025 10:15</span>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="label">QR /ბარ კოდი</span>
+                            <input type="text" placeholder="" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FORM CARD -->
+                <div class="card">
+                    <h3>1. ორგანიზაცია</h3>
+
+                    <div class="grid-3">
+                        <input type="text" placeholder="ორგანიზაცია" />
+                        <input type="text" placeholder="განყოფილება" />
+                        <input type="email" placeholder="email" />
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>2. პაციენტი</h3>
+
+                    <div class="grid-3">
+                        <input type="text" placeholder="სახელი და გვარი" />
+                        <input type="date" />
+                        <input type="number" placeholder="ასაკი" />
+                    </div>
+
+                    <div class="grid-2">
+                        <input type="text" placeholder="პირადი ნომერი" />
+                        <input type="text" placeholder="ტელეფონი" />
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>3. კვლევები</h3>
+
+                    <input type="text" placeholder="კვლევის ძიება" />
+
+                    <div class="tags">
+                        <span>CBC</span>
+                        <span>Urea</span>
+                        <span>Creatinine</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
