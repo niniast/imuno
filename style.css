@@ -8,6 +8,7 @@
 body {
     background: #f4f7fb;
 }
+
 h3 {
     color: #0d44b9;
 }
@@ -15,9 +16,17 @@ h3 {
 /* LAYOUT */
 .layout {
     display: flex;
-    align-items: stretch;
 }
-/* SIDEBAR  მარცხენა ჩამონათვალი*/
+
+.main {
+    flex: 1;
+}
+
+.content {
+    padding: 20px 24px;
+}
+
+/* ---SIDEBAR---- */
 .sidebar {
     width: 240px;
     background: #0b3c8c;
@@ -28,15 +37,9 @@ h3 {
     flex-direction: column;
     min-height: 100vh;
 }
-/* menu ზემოთ დარჩება */
+
 .menu {
     flex: 1;
-}
-
-.logout-item {
-    margin-top: auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* 👈 ნაცრისფერი ხაზი */
-    padding-top: 15px;
 }
 
 .logo {
@@ -45,7 +48,12 @@ h3 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/*nav*/
+.logout-item {
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* 👈 ნაცრისფერი ხაზი */
+    padding-top: 15px;
+}
+
 .nav-item {
     display: flex;
     align-items: center;
@@ -75,14 +83,7 @@ h3 {
     background: rgba(255, 255, 255, 0.15);
 }
 
-/* MAIN  ცენტრალური ნაწილი*/
-.main {
-    flex: 1;
-}
-.content {
-    padding: 20px 24px;
-}
-/* TOPBAR  1  ზოლი */
+/* ----TOPBAR  1  ზოლი---- */
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -122,7 +123,7 @@ h3 {
     color: white;
 }
 
-/* INFO BAR მეორე ზოლი */
+/* ---INFO BAR მეორე ზოლი ----*/
 
 .info-bar {
     display: flex;
@@ -172,6 +173,7 @@ h3 {
     border-radius: 50%;
     display: inline-block;
 }
+
 .barcode {
     background-color: #e3ebf6;
     border-radius: 8px;
@@ -179,7 +181,7 @@ h3 {
     height: 30px;
 }
 
-/* CARD ძირითადი ნაწილი */
+/*---- CARD ძირითადი ნაწილი---- */
 .card {
     background: white;
     border-radius: 16px;
@@ -189,6 +191,7 @@ h3 {
     flex-direction: column;
     gap: 16px;
 }
+
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -198,6 +201,19 @@ h3 {
 
 .card-header h3 {
     margin: 0;
+    font-size: 18px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .helper {
@@ -208,6 +224,7 @@ h3 {
     padding: 4px 8px;
 }
 
+/*-----FORM----*/
 .form-group {
     display: flex;
     flex-direction: column;
@@ -218,24 +235,18 @@ h3 {
     font-size: 12px;
     color: #6b7280;
 }
+
+input,
 select {
     padding: 12px;
     border: 1px solid #d1d5db;
     border-radius: 8px;
-    background: white;
-    font-size: 14px;
-    cursor: pointer;
 }
-/* GRID */
-.grid-2-section {
+
+/* ----GRID---- */
+.grid-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    grid-template-columns: 1fr;
 }
 
 .grid-2 {
@@ -244,31 +255,139 @@ select {
     gap: 15px;
     margin-top: 15px;
 }
-.grid-1 {
+.grid-3 {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
+
 .grid-1,
 .grid-2,
 .grid-3 {
     margin-bottom: 15px;
 }
-/* INPUT */
-input {
-    padding: 12px;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
+
+.grid-2-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-/* TAGS */
-.tags {
-    margin-top: 15px;
+/* ----SEARCH ----*/
+.search-box {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #3b82f6;
+}
+
+.research-list {
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.research-item {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.research-item:last-child {
+    border-bottom: none;
+}
+
+.research-item span {
+    flex: 1;
+    margin-left: 8px;
+}
+
+.research-item input {
+    accent-color: #3b82f6;
+}
+
+.research-item .remove {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #9ca3af;
+}
+
+.research-item .remove:hover {
+    color: red;
+}
+
+/* ----TEMPLATE BUTTON---- */
+.template-btn {
+    background: white;
+    border: 1px solid #d1d5db;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.template-btn:hover {
+    background: #f3f4f6;
+}
+
+.add-btn {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.badge-urgent {
+    background: #fee2e2;
+    color: #dc2626;
+    border-radius: 20px;
+}
+
+/* ----TAGS -----*/
+.tags {
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
-.tags span {
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     background: #e0ecff;
-    padding: 8px 12px;
+    color: #1d4ed8;
+    padding: 6px 12px;
     border-radius: 20px;
+    font-size: 14px;
+}
+
+.tag .remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #1d4ed8;
+}
+
+.tag .remove:hover {
+    color: red;
 }
