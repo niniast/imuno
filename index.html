@@ -12,7 +12,7 @@
             <aside class="sidebar">
                 <h2 class="logo">imuno</h2>
 
-                <nav>
+                <nav class="menu">
                     <label class="nav-item">
                         <input type="checkbox" />
                         <span>მთავარი</span>
@@ -59,6 +59,12 @@
                         <span>პარამეტრები</span>
                     </label>
                 </nav>
+                <!-- 👇 logout -->
+
+                <label class="nav-item logout-item">
+                    <input type="checkbox" />
+                    <span>გასვლა</span>
+                </label>
             </aside>
 
             <!-- MAIN -->
@@ -77,65 +83,141 @@
                 </div>
 
                 <!-- INFO BAR -->
-                <div class="info-bar">
-                    <div class="info">
-                        <div class="info-item">
-                            <span class="label">ფორმის ნომერი</span>
-                            <strong>REQ-2025-05-20-000123</strong>
-                        </div>
+                <div class="content">
+                    <div class="info-bar">
+                        <div class="info">
+                            <div class="info-item">
+                                <span class="label">ფორმის ნომერი</span>
+                                <strong>REQ-2025-05-20-000123</strong>
+                            </div>
 
-                        <div class="info-item">
-                            <span class="label">სტატუსი</span>
-                            <span class="badge">შესავსები</span>
-                        </div>
+                            <div class="info-item">
+                                <span class="label">სტატუსი</span>
+                                <span class="badge">შესავსები</span>
+                            </div>
 
-                        <div class="info-item">
-                            <span class="label"> შექმნის დრო</span>
-                            <span>20/05/2025 10:15</span>
-                        </div>
+                            <div class="info-item">
+                                <span class="label"> შექმნის დრო</span>
+                                <span>20/05/2025 10:15</span>
+                            </div>
 
-                        <div class="info-item">
-                            <span class="label">QR /ბარ კოდი</span>
-                            <input type="text" placeholder="" />
+                            <div class="info-item">
+                                <span class="label">QR /ბარ კოდი</span>
+                                <input
+                                    type="text"
+                                    class="barcode"
+                                    placeholder=""
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- FORM CARD -->
-                <div class="card">
-                    <h3>1. ორგანიზაცია</h3>
+                    <!-- FORM CARD -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>1. ორგანიზაცია</h3>
+                            <span class="helper">მინიმალური</span>
+                        </div>
+                        <div class="grid-3">
+                            <!-- ორგანიზაცია -->
+                            <div class="form-group">
+                                <label>ორგანიზაცია *</label>
+                                <select>
+                                    <option>აირჩიე ორგანიზაცია</option>
+                                    <option>მედისონ კლინიკა</option>
+                                    <option>ევექსი</option>
+                                    <option>გული კლინიკა</option>
+                                </select>
+                            </div>
 
-                    <div class="grid-3">
-                        <input type="text" placeholder="ორგანიზაცია" />
-                        <input type="text" placeholder="განყოფილება" />
-                        <input type="email" placeholder="email" />
+                            <!-- განყოფილება -->
+                            <div class="form-group">
+                                <label>განყოფილება</label>
+                                <select>
+                                    <option>აირჩიე განყოფილება</option>
+                                    <option>ლაბორატორია</option>
+                                    <option>რენტგენი</option>
+                                    <option>თერაპია</option>
+                                </select>
+                            </div>
+
+                            <!-- დამატებითი მეილი -->
+                            <div class="form-group">
+                                <label>დამატებითი მეილი</label>
+                                <input
+                                    type="email"
+                                    placeholder="info@medisoni.ge"
+                                />
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <h3>2. პაციენტი</h3>
+                    <div class="grid-2-section">
+                        <!-- პაციენტი -->
+                        <div class="card">
+                            <h3>2. პაციენტი</h3>
 
-                    <div class="grid-3">
-                        <input type="text" placeholder="სახელი და გვარი" />
-                        <input type="date" />
-                        <input type="number" placeholder="ასაკი" />
-                    </div>
+                            <!-- 1 ხაზი -->
+                            <div class="grid-1">
+                                <div class="form-group">
+                                    <label>სახელი და გვარი *</label>
+                                    <input
+                                        type="text"
+                                        placeholder="სახელი და გვარი"
+                                    />
+                                </div>
+                            </div>
 
-                    <div class="grid-2">
-                        <input type="text" placeholder="პირადი ნომერი" />
-                        <input type="text" placeholder="ტელეფონი" />
-                    </div>
-                </div>
+                            <!-- 2 ხაზი -->
+                            <div class="grid-3">
+                                <div class="form-group">
+                                    <label>სქესი *</label>
+                                    <select>
+                                        <option>აირჩიე</option>
+                                        <option>მამრობითი</option>
+                                        <option>მდედრობითი</option>
+                                    </select>
+                                </div>
 
-                <div class="card">
-                    <h3>3. კვლევები</h3>
+                                <div class="form-group">
+                                    <label>დაბადების თარიღი *</label>
+                                    <input type="date" />
+                                </div>
 
-                    <input type="text" placeholder="კვლევის ძიება" />
+                                <div class="form-group">
+                                    <label>ასაკი</label>
+                                    <input type="number" placeholder="ასაკი" />
+                                </div>
+                            </div>
 
-                    <div class="tags">
-                        <span>CBC</span>
-                        <span>Urea</span>
-                        <span>Creatinine</span>
+                            <!-- 3 ხაზი -->
+                            <div class="grid-2">
+                                <div class="form-group">
+                                    <label>პირადი ნომერი *</label>
+                                    <input
+                                        type="text"
+                                        placeholder="პირადი ნომერი"
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <label>ტელეფონი *</label>
+                                    <input type="text" placeholder="ტელეფონი" />
+                                </div>
+                            </div>
+                            <!-- კვლევები -->
+                        </div>
+                        <div class="card">
+                            <h3>3. კვლევები</h3>
+
+                            <input type="text" placeholder="კვლევის ძიება" />
+
+                            <div class="tags">
+                                <span>CBC</span>
+                                <span>Urea</span>
+                                <span>Creatinine</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
