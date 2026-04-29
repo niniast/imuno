@@ -428,3 +428,155 @@ select {
 .tag .remove:hover {
     color: red;
 }
+
+/* ===== 4. მასალა ===== */
+
+.material-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* საერთო row */
+.material-row {
+    display: flex;
+    gap: 15px;
+}
+
+/* ზედა ხაზი (4 ველი) */
+.material-row--top .field {
+    flex: 1;
+}
+
+/* ქვედა ხაზი (3 ველი) */
+.material-row--bottom .field {
+    flex: 1;
+}
+
+/* field */
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* label */
+.field label {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* input & select */
+.field input,
+.field select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+/* focus effect */
+.field input:focus,
+.field select:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+/* ===== კომენტარი ===== */
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* header */
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* სიმბოლოების რაოდენობა */
+.char-count {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+/* textarea */
+.comment-input {
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    font-family: inherit;
+}
+
+/* focus */
+.comment-input:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+/* ===== SUMMARY ===== */
+
+.summary-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* სათაური */
+.summary-title {
+    color: #0d44b9;
+    font-size: 18px;
+}
+
+/* list */
+.summary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* თითო item */
+.summary-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* label */
+.summary-item .label {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* value */
+.summary-item strong {
+    font-size: 14px;
+    color: #111827;
+}
+
+/* button */
+.summary-btn {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.summary-btn:hover {
+    background: #2563eb;
+}

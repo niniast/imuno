@@ -111,7 +111,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- FORM CARD -->
                     <div class="card">
                         <div class="card-header">
@@ -151,7 +150,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="grid-2-section">
                         <!-- პაციენტი -->
                         <div class="card">
@@ -264,6 +262,106 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="card material-section">
+                    <h3 class="section-title">4. მასალა</h3>
+
+                    <!-- ზედა ხაზი -->
+                    <div class="material-row material-row--top">
+                        <div class="field">
+                            <label>მასალის ტიპი *</label>
+                            <select>
+                                <option>სისხლი (ვენური)</option>
+                                <option>შარდი</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label>კონტეინერი *</label>
+                            <select>
+                                <option>EDTA (ლურჯი თავსახური)</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label>აღების დრო *</label>
+                            <input type="time" />
+                        </div>
+                    </div>
+
+                    <!-- ქვედა ხაზი -->
+                    <div class="material-row material-row--bottom">
+                        <div class="field">
+                            <label>ამღები პირი</label>
+                            <input type="text" placeholder="სახელი გვარი" />
+                        </div>
+
+                        <div class="field">
+                            <label>რაოდენობა</label>
+                            <input type="number" placeholder="5" />
+                        </div>
+
+                        <div class="field">
+                            <label>ერთეული</label>
+                            <select>
+                                <option>მლ</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card comment-section">
+                    <div class="comment-header">
+                        <h3>5. კომენტარი</h3>
+                        <span class="char-count">0 / 300</span>
+                    </div>
+
+                    <textarea
+                        class="comment-input"
+                        placeholder="დაწერე კომენტარი..."
+                        maxlength="300"
+                    ></textarea>
+                </div>
+                <div class="summary-card">
+                    <h3 class="summary-title">შეჯამება</h3>
+
+                    <div class="summary-list">
+                        <div class="summary-item">
+                            <span class="label">ორგანიზაცია</span>
+                            <strong>მედისონ კლინიკა</strong>
+                        </div>
+
+                        <div class="summary-item">
+                            <span class="label">პაციენტი</span>
+                            <strong>თამარ დავითაშვილი</strong>
+                        </div>
+
+                        <div class="summary-item">
+                            <span class="label">პირადი ნომერი</span>
+                            <strong>88001012345</strong>
+                        </div>
+
+                        <div class="summary-item">
+                            <span class="label">კვლევები</span>
+                            <strong>3 კვლევა</strong>
+                        </div>
+
+                        <div class="summary-item">
+                            <span class="label">მასალა</span>
+                            <strong>სისხლი (ვენური)</strong>
+                        </div>
+
+                        <div class="summary-item">
+                            <span class="label">სტატუსი</span>
+                            <strong>დამუშავება</strong>
+                        </div>
+
+                        <div class="summary-item">
+                            <span class="label">აღების დრო</span>
+                            <strong>20/05/2025 09:30</strong>
+                        </div>
+                    </div>
+
+                    <button class="summary-btn">გაგზავნა</button>
                 </div>
             </main>
         </div>
