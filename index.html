@@ -93,7 +93,7 @@
 
                             <div class="info-item">
                                 <span class="label">სტატუსი</span>
-                                <span class="badge">შესავსები</span>
+                                <span class="badge badge--dot">შესავსები</span>
                             </div>
 
                             <div class="info-item">
@@ -209,7 +209,7 @@
                                 <div class="header-left">
                                     <h3>3. კვლევები</h3>
                                     <span class="badge badge-urgent"
-                                        >დაჩქარებული</span
+                                        >დაჩქარებული!</span
                                     >
                                 </div>
 
@@ -226,8 +226,12 @@
                                     type="text"
                                     placeholder="კვლევის ძებნა..."
                                 />
+                                <button class="add-btn">დამატება</button>
                             </div>
-
+                            <div class="selected-header">
+                                <span>არჩეული კვლევები</span>
+                                <button class="clear-btn">გასუფთავება</button>
+                            </div>
                             <!-- DROPDOWN (fake list) -->
                             <div class="research-list">
                                 <label class="research-item">
@@ -242,6 +246,16 @@
                                     <button class="remove">×</button>
                                 </label>
 
+                                <label class="research-item">
+                                    <input type="checkbox" checked />
+                                    <span>კრეატინინი (Creatinine)</span>
+                                    <button class="remove">×</button>
+                                </label>
+                                <label class="research-item">
+                                    <input type="checkbox" checked />
+                                    <span>კრეატინინი (Creatinine)</span>
+                                    <button class="remove">×</button>
+                                </label>
                                 <label class="research-item">
                                     <input type="checkbox" checked />
                                     <span>კრეატინინი (Creatinine)</span>

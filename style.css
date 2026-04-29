@@ -165,7 +165,8 @@ h3 {
     align-items: center;
     gap: 6px;
 }
-.badge::before {
+
+.badge--dot::before {
     content: "";
     width: 6px;
     height: 6px;
@@ -275,8 +276,10 @@ select {
 
 /* ----SEARCH ----*/
 .search-box {
-    position: relative;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
 }
 
 .search-box input {
@@ -285,6 +288,7 @@ select {
     border: 1px solid #d1d5db;
     border-radius: 10px;
     outline: none;
+    flex: 1;
 }
 
 .search-box input:focus {
@@ -292,10 +296,16 @@ select {
 }
 
 .research-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
     border: 1px solid #d1d5db;
     border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 12px;
+    padding: 8px;
+    background: #f4f7fb;
+    max-height: 180px; /* 👈 აქ აკონტროლებ სიმაღლეს */
+    overflow-y: auto; /* 👈 აქ ირთვება scroll */
 }
 
 .research-item {
@@ -303,12 +313,9 @@ select {
     align-items: center;
     justify-content: space-between;
     padding: 10px 12px;
-    border-bottom: 1px solid #eee;
     cursor: pointer;
-}
-
-.research-item:last-child {
-    border-bottom: none;
+    background: white;
+    border-radius: 8px;
 }
 
 .research-item span {
@@ -317,7 +324,7 @@ select {
 }
 
 .research-item input {
-    accent-color: #3b82f6;
+    accent-color: #e3ebf6;
 }
 
 .research-item .remove {
@@ -329,18 +336,19 @@ select {
 }
 
 .research-item .remove:hover {
-    color: red;
+    color: #0d44b9;
 }
 
 /* ----TEMPLATE BUTTON---- */
 .template-btn {
-    background: white;
+    background: rgb(223, 238, 241);
     border: 1px solid #d1d5db;
     padding: 8px 14px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
     transition: 0.2s;
+    color: #0d44b9;
 }
 
 .template-btn:hover {
@@ -351,15 +359,44 @@ select {
     background: #3b82f6;
     color: white;
     border: none;
-    padding: 8px 14px;
-    border-radius: 8px;
     cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 10px;
+    white-space: nowrap;
 }
 
 .badge-urgent {
     background: #fee2e2;
     color: #dc2626;
     border-radius: 20px;
+}
+
+/* HEADER (არჩეული კვლევები + გასუფთავება) */
+.selected-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+/* ტექსტი */
+.selected-header span {
+    font-size: 14px;
+    color: #0d44b9;
+    font-weight: 500;
+}
+
+/* CLEAR BUTTON */
+.clear-btn {
+    background: none;
+    border: none;
+    color: #0d44b9;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    text-decoration: underline;
 }
 
 /* ----TAGS -----*/
