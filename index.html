@@ -69,299 +69,312 @@
 
             <!-- MAIN -->
             <main class="main">
-                <!-- HEADER -->
-                <div class="topbar">
+                <div class="wrapper">
+                    <!-- HEADER -->
                     <div class="left">
-                        <button class="burger" id="burger">☰</button>
-                        <h2>მასალის რეგისტრაცია</h2>
-                    </div>
-                    <div class="actions">
-                        <button class="btn">შენახვა</button>
-                        <button class="btn">ახალი</button>
-                        <button class="btn primary">გაგზავნა</button>
-                    </div>
-                </div>
-
-                <!-- INFO BAR -->
-                <div class="content">
-                    <div class="info-bar">
-                        <div class="info">
-                            <div class="info-item">
-                                <span class="label">ფორმის ნომერი</span>
-                                <strong>REQ-2025-05-20-000123</strong>
+                        <div class="topbar">
+                            <div class="left">
+                                <button class="burger" id="burger">☰</button>
+                                <h2>მასალის რეგისტრაცია</h2>
                             </div>
-
-                            <div class="info-item">
-                                <span class="label">სტატუსი</span>
-                                <span class="badge badge--dot">შესავსები</span>
-                            </div>
-
-                            <div class="info-item">
-                                <span class="label"> შექმნის დრო</span>
-                                <span>20/05/2025 10:15</span>
-                            </div>
-
-                            <div class="info-item">
-                                <span class="label">QR /ბარ კოდი</span>
-                                <input
-                                    type="text"
-                                    class="barcode"
-                                    placeholder=""
-                                />
+                            <div class="actions">
+                                <button class="btn">შენახვა</button>
+                                <button class="btn">ახალი</button>
+                                <button class="btn primary">გაგზავნა</button>
                             </div>
                         </div>
-                    </div>
-                    <!-- FORM CARD -->
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>1. ორგანიზაცია</h3>
-                            <span class="helper">მინიმალური</span>
-                        </div>
-                        <div class="grid-3">
-                            <!-- ორგანიზაცია -->
-                            <div class="form-group">
-                                <label>ორგანიზაცია *</label>
-                                <select>
-                                    <option>აირჩიე ორგანიზაცია</option>
-                                    <option>მედისონ კლინიკა</option>
-                                    <option>ევექსი</option>
-                                    <option>გული კლინიკა</option>
-                                </select>
-                            </div>
 
-                            <!-- განყოფილება -->
-                            <div class="form-group">
-                                <label>განყოფილება</label>
-                                <select>
-                                    <option>აირჩიე განყოფილება</option>
-                                    <option>ლაბორატორია</option>
-                                    <option>რენტგენი</option>
-                                    <option>თერაპია</option>
-                                </select>
-                            </div>
+                        <!-- INFO BAR -->
+                        <div class="content">
+                            <div class="info-bar">
+                                <div class="info">
+                                    <div class="info-item">
+                                        <span class="label">ფორმის ნომერი</span>
+                                        <strong>REQ-2025-05-20-000123</strong>
+                                    </div>
 
-                            <!-- დამატებითი მეილი -->
-                            <div class="form-group">
-                                <label>დამატებითი მეილი</label>
-                                <input
-                                    type="email"
-                                    placeholder="info@medisoni.ge"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-2-section">
-                        <!-- პაციენტი -->
-                        <div class="card">
-                            <h3>2. პაციენტი</h3>
+                                    <div class="info-item">
+                                        <span class="label">სტატუსი</span>
+                                        <span class="badge badge--dot"
+                                            >შესავსები</span
+                                        >
+                                    </div>
 
-                            <!-- 1 ხაზი -->
-                            <div class="grid-1">
-                                <div class="form-group">
-                                    <label>სახელი და გვარი *</label>
-                                    <input
-                                        type="text"
-                                        placeholder="სახელი და გვარი"
-                                    />
+                                    <div class="info-item">
+                                        <span class="label"> შექმნის დრო</span>
+                                        <span>20/05/2025 10:15</span>
+                                    </div>
+
+                                    <div class="info-item">
+                                        <span class="label">QR /ბარ კოდი</span>
+                                        <input
+                                            type="text"
+                                            class="barcode"
+                                            placeholder=""
+                                        />
+                                    </div>
                                 </div>
                             </div>
+                            <!-- FORM CARD -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>1. ორგანიზაცია</h3>
+                                    <span class="helper">მინიმალური</span>
+                                </div>
+                                <div class="grid-3">
+                                    <!-- ორგანიზაცია -->
+                                    <div class="form-group">
+                                        <label>ორგანიზაცია *</label>
+                                        <select>
+                                            <option>აირჩიე ორგანიზაცია</option>
+                                            <option>მედისონ კლინიკა</option>
+                                            <option>ევექსი</option>
+                                            <option>გული კლინიკა</option>
+                                        </select>
+                                    </div>
 
-                            <!-- 2 ხაზი -->
-                            <div class="grid-3">
-                                <div class="form-group">
-                                    <label>სქესი *</label>
+                                    <!-- განყოფილება -->
+                                    <div class="form-group">
+                                        <label>განყოფილება</label>
+                                        <select>
+                                            <option>აირჩიე განყოფილება</option>
+                                            <option>ლაბორატორია</option>
+                                            <option>რენტგენი</option>
+                                            <option>თერაპია</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- დამატებითი მეილი -->
+                                    <div class="form-group">
+                                        <label>დამატებითი მეილი</label>
+                                        <input
+                                            type="email"
+                                            placeholder="info@medisoni.ge"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-2-section">
+                                <!-- პაციენტი -->
+                                <div class="card">
+                                    <h3>2. პაციენტი</h3>
+
+                                    <!-- 1 ხაზი -->
+                                    <div class="grid-1">
+                                        <div class="form-group">
+                                            <label>სახელი და გვარი *</label>
+                                            <input
+                                                type="text"
+                                                placeholder="სახელი და გვარი"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <!-- 2 ხაზი -->
+                                    <div class="grid-3">
+                                        <div class="form-group">
+                                            <label>სქესი *</label>
+                                            <select>
+                                                <option>აირჩიე</option>
+                                                <option>მამრობითი</option>
+                                                <option>მდედრობითი</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>დაბადების თარიღი *</label>
+                                            <input type="date" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>ასაკი</label>
+                                            <input
+                                                type="number"
+                                                placeholder="ასაკი"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <!-- 3 ხაზი -->
+                                    <div class="grid-2">
+                                        <div class="form-group">
+                                            <label>პირადი ნომერი *</label>
+                                            <input type="text" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>ტელეფონი </label>
+                                            <input type="text" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- კვლევები -->
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="header-left">
+                                            <h3>3. კვლევები</h3>
+                                            <span class="badge badge-urgent"
+                                                >დაჩქარებული!</span
+                                            >
+                                        </div>
+
+                                        <div class="header-right">
+                                            <button class="template-btn">
+                                                შაბლონი
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- SEARCH -->
+                                    <div class="search-box">
+                                        <input
+                                            type="text"
+                                            placeholder="კვლევის ძებნა..."
+                                        />
+                                        <button class="add-btn">
+                                            დამატება
+                                        </button>
+                                    </div>
+                                    <div class="selected-header">
+                                        <span>არჩეული კვლევები</span>
+                                        <button class="clear-btn">
+                                            გასუფთავება
+                                        </button>
+                                    </div>
+                                    <!-- DROPDOWN (fake list) -->
+                                    <div class="research-list">
+                                        <label class="research-item">
+                                            <input type="checkbox" checked />
+                                            <span
+                                                >სისხლის საერთო ანალიზი
+                                                (CBC)</span
+                                            >
+                                            <button class="remove">×</button>
+                                        </label>
+
+                                        <label class="research-item">
+                                            <input type="checkbox" checked />
+                                            <span>შარდოვანა (Urea)</span>
+                                            <button class="remove">×</button>
+                                        </label>
+
+                                        <label class="research-item">
+                                            <input type="checkbox" checked />
+                                            <span>კრეატინინი (Creatinine)</span>
+                                            <button class="remove">×</button>
+                                        </label>
+                                        <label class="research-item">
+                                            <input type="checkbox" checked />
+                                            <span>კრეატინინი (Creatinine)</span>
+                                            <button class="remove">×</button>
+                                        </label>
+                                        <label class="research-item">
+                                            <input type="checkbox" checked />
+                                            <span>კრეატინინი (Creatinine)</span>
+                                            <button class="remove">×</button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card material-section">
+                            <h3 class="section-title">4. მასალა</h3>
+
+                            <!-- ზედა ხაზი -->
+                            <div class="material-row material-row--top">
+                                <div class="field">
+                                    <label>მასალის ტიპი *</label>
                                     <select>
-                                        <option>აირჩიე</option>
-                                        <option>მამრობითი</option>
-                                        <option>მდედრობითი</option>
+                                        <option>სისხლი (ვენური)</option>
+                                        <option>შარდი</option>
                                     </select>
                                 </div>
 
-                                <div class="form-group">
-                                    <label>დაბადების თარიღი *</label>
+                                <div class="field">
+                                    <label>კონტეინერი *</label>
+                                    <select>
+                                        <option>EDTA (ლურჯი თავსახური)</option>
+                                    </select>
+                                </div>
+
+                                <div class="field">
+                                    <label>აღების თარიღი *</label>
                                     <input type="date" />
                                 </div>
-
-                                <div class="form-group">
-                                    <label>ასაკი</label>
-                                    <input type="number" placeholder="ასაკი" />
+                                <div class="field">
+                                    <label>აღების საათი *</label>
+                                    <input type="time" />
                                 </div>
                             </div>
 
-                            <!-- 3 ხაზი -->
-                            <div class="grid-2">
-                                <div class="form-group">
-                                    <label>პირადი ნომერი *</label>
-                                    <input type="text" />
+                            <!-- ქვედა ხაზი -->
+                            <div class="material-row material-row--bottom">
+                                <div class="field">
+                                    <label>ამღები პირი</label>
+                                    <input
+                                        type="text"
+                                        placeholder="სახელი გვარი"
+                                    />
                                 </div>
 
-                                <div class="form-group">
-                                    <label>ტელეფონი </label>
-                                    <input type="text" />
+                                <div class="field">
+                                    <label>რაოდენობა</label>
+                                    <input type="number" placeholder="5" />
+                                </div>
+
+                                <div class="field">
+                                    <label>ერთეული</label>
+                                    <select>
+                                        <option>მლ</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                        <!-- კვლევები -->
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="header-left">
-                                    <h3>3. კვლევები</h3>
-                                    <span class="badge badge-urgent"
-                                        >დაჩქარებული!</span
-                                    >
-                                </div>
-
-                                <div class="header-right">
-                                    <button class="template-btn">
-                                        შაბლონი
-                                    </button>
-                                </div>
+                        <div class="card comment-section">
+                            <div class="comment-header">
+                                <h3>5. კომენტარი</h3>
+                                <span class="char-count">0 / 300</span>
                             </div>
 
-                            <!-- SEARCH -->
-                            <div class="search-box">
-                                <input
-                                    type="text"
-                                    placeholder="კვლევის ძებნა..."
-                                />
-                                <button class="add-btn">დამატება</button>
-                            </div>
-                            <div class="selected-header">
-                                <span>არჩეული კვლევები</span>
-                                <button class="clear-btn">გასუფთავება</button>
-                            </div>
-                            <!-- DROPDOWN (fake list) -->
-                            <div class="research-list">
-                                <label class="research-item">
-                                    <input type="checkbox" checked />
-                                    <span>სისხლის საერთო ანალიზი (CBC)</span>
-                                    <button class="remove">×</button>
-                                </label>
+                            <textarea
+                                class="comment-input"
+                                placeholder="დაწერე კომენტარი..."
+                                maxlength="300"
+                            ></textarea>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <h3 class="summary-title">შეჯამება</h3>
 
-                                <label class="research-item">
-                                    <input type="checkbox" checked />
-                                    <span>შარდოვანა (Urea)</span>
-                                    <button class="remove">×</button>
-                                </label>
+                        <div class="summary-list">
+                            <div class="summary-item">
+                                <span class="label">ორგანიზაცია</span>
+                                <strong>მედისონ კლინიკა</strong>
+                            </div>
 
-                                <label class="research-item">
-                                    <input type="checkbox" checked />
-                                    <span>კრეატინინი (Creatinine)</span>
-                                    <button class="remove">×</button>
-                                </label>
-                                <label class="research-item">
-                                    <input type="checkbox" checked />
-                                    <span>კრეატინინი (Creatinine)</span>
-                                    <button class="remove">×</button>
-                                </label>
-                                <label class="research-item">
-                                    <input type="checkbox" checked />
-                                    <span>კრეატინინი (Creatinine)</span>
-                                    <button class="remove">×</button>
-                                </label>
+                            <div class="summary-item">
+                                <span class="label">პაციენტი</span>
+                                <strong>თამარ დავითაშვილი</strong>
+                            </div>
+
+                            <div class="summary-item">
+                                <span class="label">პირადი ნომერი</span>
+                                <strong>88001012345</strong>
+                            </div>
+
+                            <div class="summary-item">
+                                <span class="label">კვლევები</span>
+                                <strong>3 კვლევა</strong>
+                            </div>
+
+                            <div class="summary-item">
+                                <span class="label">მასალა</span>
+                                <strong>სისხლი (ვენური)</strong>
                             </div>
                         </div>
+
+                        <button class="summary-btn">ბეჭდვა</button>
                     </div>
-                </div>
-                <div class="card material-section">
-                    <h3 class="section-title">4. მასალა</h3>
-
-                    <!-- ზედა ხაზი -->
-                    <div class="material-row material-row--top">
-                        <div class="field">
-                            <label>მასალის ტიპი *</label>
-                            <select>
-                                <option>სისხლი (ვენური)</option>
-                                <option>შარდი</option>
-                            </select>
-                        </div>
-
-                        <div class="field">
-                            <label>კონტეინერი *</label>
-                            <select>
-                                <option>EDTA (ლურჯი თავსახური)</option>
-                            </select>
-                        </div>
-
-                        <div class="field">
-                            <label>აღების დრო *</label>
-                            <input type="time" />
-                        </div>
-                    </div>
-
-                    <!-- ქვედა ხაზი -->
-                    <div class="material-row material-row--bottom">
-                        <div class="field">
-                            <label>ამღები პირი</label>
-                            <input type="text" placeholder="სახელი გვარი" />
-                        </div>
-
-                        <div class="field">
-                            <label>რაოდენობა</label>
-                            <input type="number" placeholder="5" />
-                        </div>
-
-                        <div class="field">
-                            <label>ერთეული</label>
-                            <select>
-                                <option>მლ</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="card comment-section">
-                    <div class="comment-header">
-                        <h3>5. კომენტარი</h3>
-                        <span class="char-count">0 / 300</span>
-                    </div>
-
-                    <textarea
-                        class="comment-input"
-                        placeholder="დაწერე კომენტარი..."
-                        maxlength="300"
-                    ></textarea>
-                </div>
-                <div class="summary-card">
-                    <h3 class="summary-title">შეჯამება</h3>
-
-                    <div class="summary-list">
-                        <div class="summary-item">
-                            <span class="label">ორგანიზაცია</span>
-                            <strong>მედისონ კლინიკა</strong>
-                        </div>
-
-                        <div class="summary-item">
-                            <span class="label">პაციენტი</span>
-                            <strong>თამარ დავითაშვილი</strong>
-                        </div>
-
-                        <div class="summary-item">
-                            <span class="label">პირადი ნომერი</span>
-                            <strong>88001012345</strong>
-                        </div>
-
-                        <div class="summary-item">
-                            <span class="label">კვლევები</span>
-                            <strong>3 კვლევა</strong>
-                        </div>
-
-                        <div class="summary-item">
-                            <span class="label">მასალა</span>
-                            <strong>სისხლი (ვენური)</strong>
-                        </div>
-
-                        <div class="summary-item">
-                            <span class="label">სტატუსი</span>
-                            <strong>დამუშავება</strong>
-                        </div>
-
-                        <div class="summary-item">
-                            <span class="label">აღების დრო</span>
-                            <strong>20/05/2025 09:30</strong>
-                        </div>
-                    </div>
-
-                    <button class="summary-btn">გაგზავნა</button>
                 </div>
             </main>
         </div>
